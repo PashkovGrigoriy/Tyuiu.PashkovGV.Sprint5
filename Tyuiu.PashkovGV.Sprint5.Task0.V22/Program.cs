@@ -9,6 +9,7 @@ namespace Tyuiu.PashkovGV.Sprint5.Task0.V22
             int x = 3;
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine(res);
+            
         }
     }
 }
