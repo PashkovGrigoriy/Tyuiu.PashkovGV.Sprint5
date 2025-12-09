@@ -3,7 +3,7 @@ using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.PashkovGV.Sprint5.Task2.V3.Lib
 {
-    public class DataService : ISprint5Task2V2
+    public class DataService : ISprint5Task2V3
     {
         public string SaveToFileTextData(int[,] matrix)
         {
