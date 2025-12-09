@@ -12,28 +12,28 @@ namespace Tyuiu.PashkovGV.Sprint5.Task1.V18.Lib
             
             for (int i = startValue; i <= stopValue; i++)
             {
-                if (i < 0 || i > 0)
+                if (i != 0)
                 {
                     if (i != stopValue)
                     {
                         double z = (3 * i) + 2 - (((2 * i) - i) / (Math.Cos(i) + 1));
                         z = Math.Round(z, 2);
                         string zz = Convert.ToString(z);
-                        File.WriteAllText(p, zz + Environment.NewLine);
+                        File.AppendAllText(p, zz + Environment.NewLine);
                     }
                     else
                     {
                         double z = (3 * i) + 2 - (((2 * i) - i) / (Math.Cos(i) + 1));
                         z = Math.Round(z, 2);
                         string zz = Convert.ToString(z);
-                        File.WriteAllText(p, zz);
+                        File.AppendAllText(p, zz);
                     }
                 }
                 else
                 {
                     int z = 0;
                     string zz = Convert.ToString(z);
-                    File.WriteAllText(p, zz + Environment.NewLine);
+                    File.AppendAllText(p, zz + Environment.NewLine);
                 }
             }
             return p;
