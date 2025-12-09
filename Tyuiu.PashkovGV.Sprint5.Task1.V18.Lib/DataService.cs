@@ -31,7 +31,7 @@ namespace Tyuiu.PashkovGV.Sprint5.Task1.V18.Lib
                 }
                 else
                 {
-                    int z = 0;
+                    int z = 2;
                     string zz = Convert.ToString(z);
                     File.AppendAllText(p, zz + Environment.NewLine);
                 }
