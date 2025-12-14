@@ -10,8 +10,8 @@ namespace Tyuiu.PashkovGV.Sprint5.Task4.V8
             string b = "InPutDataFileTask4V8.txt";
 
             string f = Path.Combine(a, b);
-            string c = File.ReadAllText(f);
-            double g = ds.LoadFromDataFile(c);
+            
+            double g = ds.LoadFromDataFile(f);
             Console.WriteLine(g);
             Console.ReadKey();
         }

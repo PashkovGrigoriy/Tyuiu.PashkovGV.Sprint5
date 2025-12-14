@@ -6,10 +6,10 @@ namespace Tyuiu.PashkovGV.Sprint5.Task4.V8.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string k = path;
+            string k = File.ReadAllText(path); ;
 
 
-            double z = double.Parse(path, CultureInfo.InvariantCulture);
+            double z = Convert.ToDouble(k);
             double i = Math.Round((((Math.Pow(z, 2)) / (Math.Sin(z))) + 3),3);
             return i;
         }
