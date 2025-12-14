@@ -6,25 +6,18 @@ namespace Tyuiu.PashkovGV.Sprint5.Task6.V18.Lib
     {
         public int LoadFromDataFile(string path)
         {
+            string s = File.ReadAllText(path);
+            string[] words = s.Split(' ');
             int c = 0;
-            string t = File.ReadAllText(path);
-            using StreamReader sr = new StreamReader(path);
+            foreach(string w in words)
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
+                if ( (w == "1") || (w == "2") || (w == "3") || (w == "4") || (w == "5") || (w == "6") || (w == "7") || (w == "8") || (w == "9"))
                 {
-                    
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        if ( (line[i] ==  '1') || (line[i] == '2') || (line[i] == '3') || (line[i] == '4') || (line[i] == '5') || (line[i] == '6') || (line[i] == '7') || (line[i] == '8') || (line[i] == '9'))
-                        {
-                            c ++;
-                        }
-                    }
+                    c++;
                 }
+
             }
-            return (c);
-            
+            return c;
         }
     }
 }
